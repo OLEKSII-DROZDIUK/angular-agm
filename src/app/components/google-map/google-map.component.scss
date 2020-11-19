@@ -1,0 +1,19 @@
+google-map {
+
+    agm-map {
+			height: 100vh;
+    }
+
+		.agm-info-window-content  {
+			display: flex;
+			flex-direction: column;
+			.close-btn  {
+				margin: 10px;
+				background: #4CAF50;
+				border: none;
+				padding: 0;
+				color: white;
+				text-decoration: none;
+			}
+		}
+}

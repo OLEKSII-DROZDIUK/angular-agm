@@ -1,0 +1,31 @@
+<!-- <google-map> -->
+
+    <agm-map 
+			[latitude]="lat"
+			[longitude]="lng"
+			[zoom]="zoom"
+			[disableDefaultUI]="false"
+			[zoomControl]="false"
+			(mapClick)="mapClicked($event.coords)"
+		>
+
+    <agm-marker
+			*ngFor="let marker of markers; let i = index"
+			[latitude]="marker.lat"
+			[longitude]="marker.lng"
+			[markerDraggable]="marker.draggable"
+			(dragEnd)="markerDragEnd($event.coords, i)">
+
+      <agm-info-window>
+				<strong>{{'lat: ' + marker.lat}}</strong>
+				<strong>{{'lng: ' + marker.lng}}</strong>
+				<button
+					class="close-btn"
+					(click)="delMarker(i)">
+					del marker
+				</button>
+			</agm-info-window>
+		</agm-marker>
+		
+  </agm-map>
+<!-- </google-map> -->
