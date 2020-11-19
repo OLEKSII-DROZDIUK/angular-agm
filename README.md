@@ -8,6 +8,7 @@ QUICK START in local machine
 -----------
 1) In main folder run command "npm install";
 2) Open src/app/components/google-map/google-map.module.ts and set apiKey: string in AgmCoreModule. You neeed to provide a Google Maps API key to be able to see a Map. Get an API key [here](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key)
+Enabled APIs: Maps JavaScript API
 3) Run "ng serve" command for develop run app.
 
 
@@ -30,6 +31,9 @@ QUICK START in local machine
 ### Functional:
 
 -Add many marker in world map;
+
 -See detail info this marker, need click on this marker;
+
 -Delete any marker , nedd click on marker and click the button "del marker";
+
 -Move any marker anywere in world map.
